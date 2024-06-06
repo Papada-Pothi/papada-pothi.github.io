@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js}",
   '*.{html,js}'],
+   
   theme: {
+
     extend: {
+      
+      
       backgroundImage: {
-        'hero-pattern': "url('/src/images/bg-desktop.svg')",},
+        'hero-pattern': "url('/src/images/bg-desktop.svg')",}, 
        
     },
     screens: {
@@ -25,6 +30,8 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     }
+   
+    
   },
   plugins: [ ],
 }
