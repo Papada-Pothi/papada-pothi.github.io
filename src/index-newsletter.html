@@ -85,7 +85,9 @@
         subscribeButton.addEventListener('click', function(event) {
             event.preventDefault();
             if (emailInput.checkValidity()) {
-                window.location.href = 'success-page.html';
+                const email = emailInput.value;
+                window.location.href = `success-page.html?email=${encodeURIComponent(email)}`;
+               
             } else {
                 errorMessage.style.visibility = 'visible';
                 emailInput.focus();

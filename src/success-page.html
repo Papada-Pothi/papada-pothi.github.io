@@ -14,8 +14,8 @@
         <div class="mt-4 text-5xl sm:text-4xl font-bold">Thanks for subscribing!</div> 
         <div class="text-sm mt-6">A confirmation email has been sent to</div> 
         <span class="text-sm ">
-          <span class=" font-bold">
-            ash@loremcompany.com.
+          <span id="email" class=" font-bold">
+           
           </span>
           <span> Please open it and click the button inside to comfirm your subscription.</span></span> 
       </div>
@@ -26,8 +26,21 @@
            </div>
 
         </div>
+        
       
 
-  
+        <script>
+          function getUrlParameter(name) {
+              name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+              const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+              const results = regex.exec(location.search);
+              return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+          };
+
+          document.addEventListener('DOMContentLoaded', () => {
+              const email = getUrlParameter('email');
+              document.getElementById('email').textContent = email;
+          });
+      </script>
 </body>
 </html>
