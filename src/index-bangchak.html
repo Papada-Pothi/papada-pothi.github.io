@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sukhumvit+Set:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./fonts.css" rel="stylesheet">
+    <link rel="icon" href="./images-bangchak/icon.png">
+    <title>Bangchak Delete Account</title>
+    <style>
+        .carousel-item {
+            display: none;
+        }
+        .carousel-item.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="min-w-sm justify-center font-sukhumvit  text-s lg:text-xl">
+    <div class="flex-col ">
+        <div>
+            <img class="w-24" src="./images-bangchak/logo.png" alt="logo">
+        </div>
+        <hr class=" h-[1px] mx-auto bg-gray-20 border-0 rounded  dark:bg-gray-700">
+        
+        <div class="relative w-full min-w-sm max-w-md mx-auto ">
+            <!-- Carousel wrapper -->
+            <div id="carousel" class="relative overflow-hidden rounded-lg mt-8 mb-8 text-top">
+                <div class="carousel-item active duration-700 ease-in-out text-center " data-slide="0">
+                    <div class="absolute top-0  w-full mx-auto  justify-center text-center">
+                        <div class="mt-8 font-bold  ">ขั้นตอนการลบบัญชี</div>
+                        <div class="mt-0 font-bold ">Bangchak</div>
+                    </div>
+                    <img src="./images-bangchak/step-1.png" class="block w-full h-full cursor-pointer" alt="Slide 1">
+                    <div class="absolute bottom-12 w-full mx-auto justify-center text-center"><b>ขั้นตอนที่ 1/6</b>  ที่หน้าหลัก เลือกที่ "ตั้งค่าส่วนบุคคล"</div>
+                </div>
+                <div class="carousel-item duration-700 ease-in-out text-center" data-slide="1">
+                    <div class="absolute top-0  w-full mx-auto justify-center text-center">
+                        <div class="mt-8 font-bold  ">ขั้นตอนการลบบัญชี</div>
+                        <div class="mt-0 font-bold ">Bangchak</div>
+                    </div>
+                    <img src="./images-bangchak/step-2.png" class="block w-full  h-full cursor-pointer" alt="Slide 2">
+                    <div class="absolute bottom-12 w-full mx-auto justify-center text-center"><b>ขั้นตอนที่ 2/6</b> เลือกแถบเมนู "อื่นๆ"</div> 
+                </div>
+                <div class="carousel-item duration-700 ease-in-out text-center" data-slide="2">
+                    <div class="absolute top-0  w-full mx-auto justify-center text-center">
+                        <div class="mt-8 font-bold  ">ขั้นตอนการลบบัญชี</div>
+                        <div class="mt-0 font-bold ">Bangchak</div>
+                    </div>
+                    <img src="./images-bangchak/step-3.png" class="block w-full  h-full cursor-pointer" alt="Slide 3">
+                    <div class="absolute bottom-12  w-full mx-auto justify-center text-center"><b>ขั้นตอนที่ 3/6</b> กด "ลบบัญชีแอปพลิเคชัน" </div>
+                </div>
+                <div class="carousel-item duration-700 ease-in-out text-center" data-slide="3">
+                    <div class="absolute top-0  w-full mx-auto justify-center text-center">
+                        <div class="mt-8 font-bold  ">ขั้นตอนการลบบัญชี</div>
+                        <div class="mt-0 font-bold ">Bangchak</div>
+                    </div>
+                    <img src="./images-bangchak/step-4.png" class="block w-full  h-full cursor-pointer" alt="Slide 4">
+                    <div class="absolute bottom-12  w-full mx-auto justify-center text-center"><b>ขั้นตอนที่ 4/6</b> แสดง Pop-up ให้กดปุ่ม "ยืนยัน"</div>
+                </div>
+                <div class="carousel-item duration-700 ease-in-out text-center" data-slide="4">
+                    <div class="absolute top-0  w-full mx-auto justify-center text-center">
+                        <div class="mt-8 font-bold  ">ขั้นตอนการลบบัญชี</div>
+                        <div class="mt-0 font-bold ">Bangchak</div>
+                    </div>
+                    <img src="./images-bangchak/step-5.png" class="block w-full  h-full cursor-pointer" alt="Slide 5">
+                    <div class="absolute bottom-12  w-full mx-auto justify-center text-center"><b>ขั้นตอนที่ 5/6</b> แสดง Pop-up แจ้งดำเนินการเรียนร้อยแล้ว <br/> กดปุ่ม "ตกลง"</div>
+                </div>
+                <div class="carousel-item duration-700 ease-in-out text-center" data-slide="5">
+                    <div class="absolute top-0  w-full mx-auto justify-center text-center">
+                        <div class="mt-8 font-bold  ">ขั้นตอนการลบบัญชี</div>
+                        <div class="mt-0 font-bold ">Bangchak</div>
+                    </div>
+                    <img src="./images-bangchak/step-6.png" class="block w-full  h-full cursor-pointer" alt="Slide 6">
+                    <div class="absolute bottom-12  w-full mx-auto justify-center text-center"><b>ขั้นตอนที่ 6/6</b> กลับไปยังหน้า "เมนูหลัก" <br/> และ Log out ออกจากระบบ</div>
+                </div>
+            </div>
+
+            <!-- Slider indicators -->
+            <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3">
+                <button class="indicator w-3 h-3 rounded-full bg-[#C4C4C4]" data-slide="0"></button>
+                <button class="indicator w-3 h-3 rounded-full bg-[#C4C4C4]" data-slide="1"></button>
+                <button class="indicator w-3 h-3 rounded-full bg-[#C4C4C4]" data-slide="2"></button>
+                <button class="indicator w-3 h-3 rounded-full bg-[#C4C4C4]" data-slide="3"></button>
+                <button class="indicator w-3 h-3 rounded-full bg-[#C4C4C4]" data-slide="4"></button>
+                <button class="indicator w-3 h-3 rounded-full bg-[#C4C4C4]" data-slide="5"></button>
+            </div>
+
+            <!-- Slider controls -->
+            <button class="absolute top-0 left-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none " data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+                    <svg class="w-6 h-6 text-[#C4C4C4]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </span>
+            </button>
+            <button class="absolute top-0 right-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+                    <svg class="w-6 h-6 text-[#C4C4C4]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <div id="modal" aria-hidden="true" class="fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center hidden">
+        <div class="bg-white rounded-lg shadow p-4 min-w-sm max-w-lg relative">
+            <button id="closeBtn" class="absolute top-2 right-2 w-8">
+                <img src="./images-bangchak/closebtn.jpg" alt="close btn">
+            </button>
+            <img id="modal-image" class="block w-full h-full" alt="Modal Image">
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const indicators = document.querySelectorAll('.indicator');
+            const modal = document.getElementById('modal');
+            const modalImage = document.getElementById('modal-image');
+            const closeBtn = document.getElementById('closeBtn');
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                carouselItems.forEach((item, idx) => {
+                    item.classList.remove('active');
+                    if (idx === index) {
+                        item.classList.add('active');
+                    }
+                });
+
+                indicators.forEach((indicator, idx) => {
+                    if (idx === index) {
+                        indicator.classList.add('bg-green-500');
+                        indicator.classList.remove('bg-[#C4C4C4]');
+                    } else {
+                        indicator.classList.remove('bg-green-500');
+                        indicator.classList.add('bg-[#C4C4C4]');
+                    }
+                });
+            }
+
+            function openModal(imageSrc) {
+                if (imageSrc) {
+                    modalImage.src = imageSrc;
+                    modal.setAttribute('aria-hidden', 'false');
+                    modal.style.display = 'flex';
+                } else {
+                    modal.setAttribute('aria-hidden', 'true');
+                    modal.style.display = 'none';
+                }
+            }
+
+            carouselItems.forEach((item, idx) => {
+                item.addEventListener('click', () => {
+                    currentIndex = idx;
+                    showSlide(currentIndex);
+                    const imagePath = `./images-bangchak/step-${idx + 1}.png`; // Adjust image path if necessary
+                    openModal(imagePath);
+                });
+            });
+
+            document.querySelector('[data-carousel-prev]').addEventListener('click', () => {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
+                showSlide(currentIndex);
+            });
+
+            document.querySelector('[data-carousel-next]').addEventListener('click', () => {
+                currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
+                showSlide(currentIndex);
+            });
+
+            indicators.forEach((indicator, idx) => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = idx;
+                    showSlide(currentIndex);
+                });
+            });
+
+            modal.addEventListener('click', function(event) {
+            const content = event.target.closest('.bg-white');
+            if (!content) { 
+                this.setAttribute('aria-hidden', 'true');
+                this.style.display = 'none';
+    }
+});
+            closeBtn.addEventListener('click', function() {
+                modal.setAttribute('aria-hidden', 'true');
+                modal.style.display = 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>

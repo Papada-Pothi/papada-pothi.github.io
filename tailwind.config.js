@@ -8,6 +8,9 @@ module.exports = {
 
     extend: {
       
+      fontFamily: {
+        'sukhumvit': ['"Sukhumvit Set"', 'sans-serif'],
+      },
       
       backgroundImage: {
         'hero-pattern': "url('/src/images/bg-desktop.svg')",}, 
